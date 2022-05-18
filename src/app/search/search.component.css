@@ -1,0 +1,18 @@
+div{
+    top: 400px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+    
+}
+div input{
+    border-radius: 10rem 0 0 10rem;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+}
+div button{
+    background-color:#d60a0ebd;
+    border-radius: 0 10rem 10rem 0;
+    size: rem;
+}
