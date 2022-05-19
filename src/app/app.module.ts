@@ -22,7 +22,7 @@ import { FoodPageComponent } from './food-page/food-page.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

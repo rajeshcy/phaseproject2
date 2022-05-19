@@ -1,9 +1,9 @@
- <!--<app-not-found [visible]="!food" notFoundMessage = "product Not Found !" resetLinkText = "Go to Homepage"></app-not-found>-->
-<div *ngIf ="food" class="container">
-   <img src="{{food.imageUrl}}" [alt]="food.name"> 
+<!--<app-not-found [visible]="!food" notFoundMessage = "product Not Found !" resetLinkText = "Go to Homepage"></app-not-found>-->
+<div *ngIf="food" class="container">
+    <img src="{{food.imageUrl}}" [alt]="food.name">
 </div>
-<div class = "details">
-    <div class ="header">
+<div class="details">
+    <div class="header">
         <span class="name">
             {{food.name}}
         </span>

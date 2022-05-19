@@ -10,20 +10,20 @@ import { CartItem } from '../shared/models/CartItem';
   styleUrls: ['./cart-page.component.css']
 })
 export class CartPageComponent implements OnInit {
-  cart!:Cart;
-  constructor(private cartService:CartService, private foodservice:FoodService) {
+  cart!: Cart;
+  constructor(private cartService: CartService, private foodservice: FoodService) {
     this.setCart();
-   }
+  }
   ngOnInit(): void {
   }
-  setCart(){
+  setCart() {
     this.cart = this.cartService.getCart();
   }
-  removeFromCart(cartItem:CartItem){
+  removeFromCart(cartItem: CartItem) {
     this.cartService.removeFromCart(cartItem.food.id);
     this.setCart();
   }
-  changeQuantity(cartItem:CartItem, quantityInString:string){
+  changeQuantity(cartItem: CartItem, quantityInString: string) {
     const quantity = parseInt(quantityInString);
     this.cartService.changeQuantity(cartItem.food.id, quantity);
     this.setCart();
